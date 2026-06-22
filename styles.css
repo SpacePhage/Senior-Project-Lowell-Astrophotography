@@ -1,0 +1,23 @@
+/* CSS Reset */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+
+
+/* Root Styles */
+:root {
+    /* Font Family */
+    --Headings: ;
+    --Subheadings: ;
+    --Body: ;
+    --Nav: ;
+
+    /* Colors */
+    --Primary: #F6A55A;
+    --DeepSpaceBlue:  #071A4A;
+    --Navy: #04112E;
+    --White: #FFFFFF;
+    --PurpleAccent: #6B4AA8;
+    --BlueAccent: #267CCF;
+}
+
