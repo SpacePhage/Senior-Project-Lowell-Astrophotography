@@ -49,27 +49,54 @@ table {
 }
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Root Styles */
 :root {
     /* Font Family */
-    --Headings: ;
-    --Subheadings: ;
-    --Body: ;
-    --Nav: ;
+    --Headings: Poppins, sans-serif;
+    --Subheadings: Poppins, sans-serif;
+    --Body: Inter, sans-serif;
+    --Nav: Poppins, sans-serif;
 
     /* Colors */
+    --Background: #010000;
     --Primary: #F6A55A;
     --DeepSpaceBlue:  #071A4A;
     --Navy: #04112E;
     --White: #FFFFFF;
     --PurpleAccent: #6B4AA8;
-    --BlueAccent: #267CCF;
+    --BlueAccent: #0d4766;
+    --DarkAccent: #02080c;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--Background);
+}
+
+footer {
+    background-color: var(--BlueAccent);
+}
+
+#contact {
+    background-color: var(--DarkAccent);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--Headings);
+    color: var(--White);
+}
+
+p {
+    font-family: var(--Body);
+    color: var(--White);
 }
 
 img {
     max-width: 300px;
     height: auto;
 }
+
+/* Navigation Styles */
