@@ -68,3 +68,8 @@ table {
     --PurpleAccent: #6B4AA8;
     --BlueAccent: #267CCF;
 }
+
+img {
+    max-width: 300px;
+    height: auto;
+}
