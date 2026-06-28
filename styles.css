@@ -92,6 +92,7 @@ h1, h2, h3, h4 {
 p {
     font-family: var(--Body);
     color: var(--White);
+    font-size: 1rem;
 }
 
 img {
@@ -100,3 +101,42 @@ img {
 }
 
 /* Navigation Styles */
+
+nav li a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--Nav);
+    font-weight: bold;  
+}
+
+header a img {
+    filter: brightness(0) invert(1);
+    height: 75px;
+    width: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    background-color: var(--Primary);
+    border: none;
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+}
