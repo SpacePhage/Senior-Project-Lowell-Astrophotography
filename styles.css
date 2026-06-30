@@ -61,6 +61,7 @@ table {
     --Nav: Poppins, sans-serif;
 
     /* Colors */
+    --h1: #f09c4b;
     --Background: #010000;
     --Primary: #F6A55A;
     --DeepSpaceBlue:  #071A4A;
@@ -100,17 +101,35 @@ img {
     height: auto;
 }
 
-/* Navigation Styles */
-header {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/planewaveBack.jpeg');
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/planewaveBack.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 40vh;
     width: 100%;
 }
 
+/* Navigation Styles */
+#headerTop {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: start;
+    justify-content: center;
 
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--h1);
+    padding: 1rem;
+}
+
+#headerContent {
+    display: flex;
+    flex-direction: column;
+}
 
 nav li a{
     text-decoration: none;
@@ -125,14 +144,6 @@ header a img {
     width: auto;
     justify-self: start;
     padding: 1.5rem 2.5rem;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr;
-    align-items: start;
-    justify-content: center;
 }
 
 ul {
