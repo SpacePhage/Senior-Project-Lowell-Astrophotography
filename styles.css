@@ -112,7 +112,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 75vh;
     width: 100%;
 }
 #headerTop {
@@ -124,15 +124,27 @@ body {
 
 }
 
+#observatory-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 h1 {
     font-size: 4rem;
     color: var(--h1);
-    padding: 1rem;
+    font-weight: bold;
+    padding: 1.25rem 0;
 }
 
 #headerContent {
     display: flex;
     flex-direction: column;
+    margin-top: 18rem;
+    padding-left: 3rem
+}
+
+#headerContent p {
+    font-size: 1rem;
 }
 
 nav li a{
@@ -145,7 +157,7 @@ nav li a{
 
 header a img {
     filter: brightness(0) invert(1);
-    height: 60px;
+    height: 75px;
     width: auto;
     justify-self: start;
     padding: 1.5rem 2.5rem;
