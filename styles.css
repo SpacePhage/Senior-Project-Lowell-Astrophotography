@@ -102,15 +102,19 @@ img {
 }
 
 body {
+    margin: 0;
+    background-color: var(--Background);
+}
+
+/* Navigation Styles */
+.hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/planewaveBack.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
 }
-
-/* Navigation Styles */
 #headerTop {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -136,6 +140,7 @@ nav li a{
     color: var(--White);
     font-family: var(--Nav);
     font-weight: bold;  
+    font-size: 1.25rem;
 }
 
 header a img {
@@ -152,12 +157,12 @@ ul {
     justify-self: center;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 2.5rem;
 }
 
 header button {
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2rem;
     margin: 1.5rem 2.5rem;
     border-radius: 20px;
     background-color: var(--Primary);
