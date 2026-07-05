@@ -249,3 +249,30 @@ h3 {
     color: var(--White);
     font-family: var(--Nav);
 }
+
+/* Crew Section Styles */
+
+#crew {
+    display: grid;
+    grid-template-rows: repeat(5, 350px);
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--DeepSpaceBlue);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bio h4 {
+
+}
