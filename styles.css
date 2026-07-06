@@ -322,6 +322,13 @@ h3 {
     font-family: var(--Nav);
 }
 
+/* Introduction Section Styles */
+#intro p {
+    padding: 0 3rem 1.25rem 3rem;
+    width: 70ch;
+    line-height: 1.5;
+}
+
 /* Crew Section Styles */
 
 #crewSection p {
@@ -360,6 +367,25 @@ article {
     height: 300px;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+/* Course Details Section Styles */
+#courseDetails ul li {
+    color: var(--White);
+}
+
+.enrollButton {
+    background-color: var(--Primary);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.75rem 4rem;
+    margin: auto;
+    align-self: center;
+    color: var(--White);
+    font-family: var(--Nav);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* Footer Styles */
