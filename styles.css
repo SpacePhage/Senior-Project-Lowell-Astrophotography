@@ -295,3 +295,130 @@ article {
     object-fit: cover;
     flex-shrink: 0;
 }
+
+/* Footer Styles */
+
+footer section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+}
+
+footer h3 {
+    padding: 4rem 0 0 0;
+}
+
+#socialMedia {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.5rem 4rem 3rem;
+    align-items: center;
+}
+
+#socialMedia p {
+    width: 40ch;
+    line-height: 2;
+    font-weight: 200;
+}
+
+#socialMedia ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+#socialMedia ul li a {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--White);
+}
+
+#aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutUs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#aboutUs ul li a {
+    text-decoration: none;
+    color: var(--Primary);
+}
+
+#workWithUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#workWithUs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#workWithUs ul li a {
+    text-decoration: none;
+    color: var(--Primary);
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 1.25rem 1rem;
+}
+
+#hours {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#hours a {
+    text-decoration: none;
+    color: var(--Primary);
+    font-family: var(--Nav);
+    font-size: 0.75rem;
+}
+
+#contactInfo {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+
+#contactInfo p {
+    color: var(--Primary);
+}
+
+footer button {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--BlueAccent);
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgb(177 227 255);
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+
+
+
