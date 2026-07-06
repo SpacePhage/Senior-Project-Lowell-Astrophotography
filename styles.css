@@ -120,6 +120,8 @@ body {
 
 /* Navigation Styles */
 .mainHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/planewaveBack.jpeg');
     background-size: cover;
     background-position: center;
@@ -129,6 +131,8 @@ body {
 }
 
 .beginnerHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/godoMilk.jpeg');
     background-size: cover;
     background-position: center;
@@ -138,6 +142,8 @@ body {
 }
 
 .deepHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/horseFlame.jpeg');
     background-size: cover;
     background-position: center;
@@ -147,6 +153,8 @@ body {
 }
 
 .ldtHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/LDT.jpeg');
     background-size: cover;
     background-position: center;
@@ -156,6 +164,8 @@ body {
 }
 
 .lunarHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Moon.jpeg');
     background-size: cover;
     background-position: center;
@@ -165,6 +175,8 @@ body {
 }
 
 .planetHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Saturn.jpeg');
     background-size: cover;
     background-position: center;
@@ -174,6 +186,8 @@ body {
 }
 
 .remoteHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Planewave1M.jpeg');
     background-size: cover;
     background-position: center;
@@ -183,6 +197,8 @@ body {
 }
 
 .solarHero {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/SunHa.jpeg');
     background-size: cover;
     background-position: center;
@@ -217,8 +233,8 @@ h1 {
 #headerContent {
     display: flex;
     flex-direction: column;
-    margin-top: 18rem;
-    padding-left: 3rem
+    margin-top: auto;
+    padding: 2rem 3rem;
 }
 
 #headerContent p {
@@ -571,7 +587,109 @@ footer button {
     font-size: 1.5rem;
 }
 
+/* Hover Styles */
+button:hover, #courses .card:hover a .card-content span{
+    background-color: rgb(85 69 141);
+    cursor: pointer;
+}
+
+ul a:hover i, #contactInfo p:hover, #hours a:hover, #aboutUs ul li a:hover, #workWithUs ul li a:hover{
+    color: rgb(85 69 141);
+}
+
+#themeToggle:hover {
+    background-color: var(--Background);
+}
 
 
+/* Media Queries */
 
+/* Tablet */
+@media (max-width: 1024px) {
+    #courses {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
 
+    h1 {
+        font-size: 3rem;
+    }
+
+    #headerContent {
+        padding-left: 2rem;
+    }
+
+    #courseDetails {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    footer section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768) {
+    #headerTop {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    header a img {
+        height: 50px;
+        padding: 1rem 0;
+    }
+
+    header button {
+        margin: 1rem 0;
+    }
+
+    #courses {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    header button {
+        margin: 1rem;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #crew img {
+        width: 250px;
+        height: 250px;
+    }
+
+    footer section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #socialMedia {
+        text-align: center;
+    }
+
+    #aboutUs, #workWithUs {
+        align-items: center;
+    }
+
+    #contact {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+}
