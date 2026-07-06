@@ -693,3 +693,29 @@ ul a:hover i, #contactInfo p:hover, #hours a:hover, #aboutUs ul li a:hover, #wor
         text-align: center;
     }
 }
+
+/* Light Theme Styles */
+body.light-mode {
+    background-color: var(--White);
+}
+
+body.light-mode #courses p, body.light-mode #crewSection p, body.light-mode #crewSection h3, body.light-mode h2, body.light-mode #courseIntro p, body.light-mode #details ul li, body.light-mode #intro p{
+    color: #111;
+}
+
+body.light-mode .image-container, body.light-mode .card a, body.light-mode article{
+    background-color: rgb(231 234 235);
+}
+
+body.light-mode article {
+    border-bottom: 2px solid #111;
+}
+
+body.light-mode .card-content, body.light-mode .image-container {
+    background: rgb(231 234 235);
+    
+}
+
+.body.light-mode .card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
